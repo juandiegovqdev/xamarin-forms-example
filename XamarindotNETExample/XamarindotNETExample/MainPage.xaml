@@ -5,11 +5,22 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="XamarindotNETExample.MainPage">
-    <StackLayout>
+    <StackLayout Orientation="Vertical"
+                 VerticalOptions="Center"
+                 HorizontalOptions="FillAndExpand">
         <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <Label Text="Welcome to Xamarin.Forms!"
+               HorizontalOptions="Center"
+               x:Name="Greetings"
+               Margin="0,0,0,30"
+               VerticalOptions="CenterAndExpand" />
+        <Entry Placeholder="Write your name, please"
+               HorizontalOptions="FillAndExpand"
+               Margin="40,0,40,0"
+               x:Name="NameEntry" />
+        <Button Text="Say hello!"
+                Clicked="HandleButtonClick"
+                Margin="70,0,70,0" />
     </StackLayout>
 
 </ContentPage>

@@ -17,5 +17,10 @@ namespace XamarindotNETExample
         {
             InitializeComponent();
         }
+
+        void HandleButtonClick(object sender, System.EventArgs e)
+        {
+            Greetings.Text = $"Hello {NameEntry.Text}!";
+        }
     }
 }
