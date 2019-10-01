@@ -5,7 +5,8 @@
     xmlns:local="clr-namespace:XamarindotNETExample"
     x:Class="XamarindotNETExample.HomePage">
     <TabbedPage.ToolbarItems>
-        <ToolbarItem Text="ADD" Clicked="AddTravel"/>
+        <ToolbarItem Text="ADD"
+                     Clicked="AddTravel" />
     </TabbedPage.ToolbarItems>
     <local:HistoryPage Title="History" />
     <local:MapPage Title="Map" />

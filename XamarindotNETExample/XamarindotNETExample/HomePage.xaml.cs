@@ -12,9 +12,9 @@ namespace XamarindotNETExample
             InitializeComponent();
         }
 
-        void AddPage(object sender, EventArgs e)
+        void AddTravel(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new NewTravelPage());
         }
     }
 }
