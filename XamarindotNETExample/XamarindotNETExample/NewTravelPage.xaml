@@ -3,7 +3,16 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="XamarindotNETExample.NewTravelPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="SAVE"
+                     Clicked="Save" />
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        
+        <StackLayout HorizontalOptions="Center"
+                     VerticalOptions="Center"
+                     Orientation="Vertical">
+            <Entry Placeholder="Write your experience!"
+                   x:Name="ExperienceEntry" />
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
