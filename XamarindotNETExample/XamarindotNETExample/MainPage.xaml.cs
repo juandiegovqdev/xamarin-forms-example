@@ -18,9 +18,20 @@ namespace XamarindotNETExample
             InitializeComponent();
         }
 
-        void HandleButtonClick(object sender, System.EventArgs e)
+        void LogIn(object sender, System.EventArgs e)
         {
-            Greetings.Text = $"Hello {NameEntry.Text}!";
+            string email = EmailEntry.Text;
+            string password = PasswordEntry.Text;
+            bool isEmailEmpty = string.IsNullOrEmpty(email);
+            bool isPasswordEmpty = string.IsNullOrEmpty(password);
+            if (isEmailEmpty || isPasswordEmpty)
+            {
+
+            }
+            else
+            {
+                Navigation.PushAsync(new HomePage());
+            }
         }
     }
 }

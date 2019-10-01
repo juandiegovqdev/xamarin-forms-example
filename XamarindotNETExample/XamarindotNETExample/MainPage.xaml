@@ -8,19 +8,19 @@
     <StackLayout Orientation="Vertical"
                  VerticalOptions="Center"
                  HorizontalOptions="FillAndExpand">
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!"
-               HorizontalOptions="Center"
-               x:Name="Greetings"
-               Margin="0,0,0,30"
-               VerticalOptions="CenterAndExpand" />
-        <Entry Placeholder="Write your name, please"
-               HorizontalOptions="FillAndExpand"
-               Margin="40,0,40,0"
-               x:Name="NameEntry" />
-        <Button Text="Say hello!"
-                Clicked="HandleButtonClick"
-                Margin="70,0,70,0" />
+        <Entry Placeholder="Email"
+               Keyboard="Email"
+               x:Name="EmailEntry"
+               Margin="30,0,30,0" />
+        <Entry Placeholder="Password"
+               Keyboard="Default"
+               x:Name="PasswordEntry"
+               IsPassword="True"
+               Margin="30,0,30,0" />
+        <Button Clicked="LogIn"
+                x:Name="LogInButton"
+                Text="Log in"
+                Margin="60,35,60,0" />
     </StackLayout>
 
 </ContentPage>
